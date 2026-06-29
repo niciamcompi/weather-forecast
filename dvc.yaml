@@ -1,11 +1,11 @@
 """
 Automatisches Re-Training Pipeline.
-Wird täglich via GitHub Actions (gratis) oder lokalem Cron-Job ausgeführt.
+Wird täglich via GitHub Actions oder lokalem Cron-Job ausgeführt.
 
 Ablauf:
   1. Neue Daten nachladen (letzte 7 Tage)
   2. Features aktualisieren
-  3. Modelle neu trainieren (inkrementell oder voll)
+  3. Modelle neu trainieren 
   4. Qualitätscheck: Neues Modell nur übernehmen, wenn besser als altes
   5. Vorhersagen für nächste 7 Tage erstellen
   6. Bericht generieren
